@@ -1,0 +1,11 @@
+---
+const { name, logo } = Astro.props;
+---
+
+<section class="mt-2 bg-white bg-opacity-5 rounded-sm">
+  <div class="p-1 flex rounded-md">
+    <img src={logo} alt="technologyLogo" class="w-5 mr-1">
+    <h1 class="text-sm text-slate-400">{name}</h1>
+  </div>
+</section>
+
