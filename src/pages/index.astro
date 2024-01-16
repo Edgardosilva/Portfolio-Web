@@ -5,36 +5,60 @@ import Skills from '../components/Skills.astro';
 import Contacto from '../components/Contacto.astro';
 import Navbar from '../components/Navbar.jsx';
 import MealProject from '../components/MealProject.astro';
+import SobreMi from '../components/SobreMi.astro';
 ---
 
 <Layout title="Welcome to Astro.">
   <Navbar client:load />
-  <section class="flex items-center justify-center">
-    <article class="w-full flex flex-col">
+  <section class="lg:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#061930] via-[#08111a] to-[#000000] flex items-center justify-center flex-col">
+    <section class="w-full flex flex-col lg:max-w-[1300px]">
       <div>
-        <div class="relative flex flex-col items-center justify-center mt-[75px]">
+        <div class="relative flex flex-col items-center justify-center mt-[90px] lg:mt-[80px] lg:h-[600px] lg:overflow-hidden">
           <img src="avatarAI.png" alt="Descripción de la imagen" class="w-full">
-          <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black to-transparent"></div>
-          <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black to-transparent"></div>
+          
+          <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black to-transparent lg:h-52"></div>
+          <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black to-transparent lg:h-28"></div>
+         
         </div>
-        <div class="absolute w-full h-[100px] flex flex-col items-center pl-5 pr-5 pb-5 mt-[-35px]">
-          <h1 class=" text-cyan-300 text-[2.8rem] font-bold leading-tight text-center">{'<Edgardo Silva />'}</h1>
-          <h3 class="text-cyan-400 text-[1.3rem] text-center mt-1">Front-end Developer</h3>
+        <div class="absolute w-full h-[100px] flex flex-col items-center pl-5 pr-5 pb-5 mt-[-35px] lg:mt-[-80px] lg:max-w-[1300px]">
+          <h1 class=" text-cyan-300 text-[2.8rem] font-bold leading-tight text-center sm:text-[3.5rem] lg:text-[6rem]">{'<Edgardo Silva />'}</h1>
+          <h3 class="text-cyan-400 text-[1.3rem] text-center mt-1 sm:text-[1.6rem] lg:text-[2.2rem]">Front-end Developer</h3>
         </div>
-        <div class="flex flex-col mt-[80px] items-center justify-between h-[140px] p-3">
-          <h3 class="text-slate-300 text-[1.1rem] text-center">Transformando ideas en experiencias digitales únicas e interactivas</h3>
-          <button class=" bg-cyan-800 text-slate-300 w-[220px] rounded-md text-xl font-bold p-1">Descargar CV</button>
+        <div class="flex flex-col mt-[80px] items-center justify-between h-[160px] p-3 lg:mt-[8rem]">
+          <h3 class="text-slate-300 text-[1.1rem] text-center sm:text-[1.3rem]">Transformando ideas en experiencias digitales únicas e interactivas</h3>
+          <button class=" bg-cyan-800 text-slate-300 w-[220px] h-[50px] rounded-md text-xl font-bold p-1 lg:text-2xl">Descargar CV</button>
         </div>
       </div>
-      <article class="m-4">
-        <Proyectos height="500" title="Proyectos"/>
-        <MealProject />
-        <Skills title="Skills"/>
-        <Contacto title="Contacto"/>
-      </article>
-    </article>
+    </section>
+    <section class="lg:w-full lg:flex lg:items-center lg:justify-center ">
+      <section class="lg:h-screen lg:flex lg:flex-col lg:mt-10 lg:max-w-[1300px]">
+        <article class="lg:flex">
+          <article class="lg:m-4 lg:w-1/3 lg:h-[350px]">
+            <h1 class="text-cyan-400 text-4xl font-bold text-center mb-5 lg:hidden">Sobre mi</h1>
+            <SobreMi />
+          </article>
+          <article class="lg:m-4 lg:w-2/3 lg:h-[350px]">
+            <h1 class="text-cyan-400 text-4xl font-bold text-center mt-14 lg:hidden">Proyectos</h1>
+            <Proyectos height="500" title="Proyectos"/>
+          </article>
+        </article>
+        <article class="lg:flex">
+          <article class="lg:m-4 lg:w-2/3 lg:h-[350px]">
+            <MealProject />
+          </article>
+          <article class="lg:m-4 lg:w-1/3 lg:h-[350px]">
+            <Skills title="Skills"/>
+          </article>
+        </article>
+        <article class="lg:flex">
+          <article class="lg:m-4 lg:w-1/3 lg:h-[350px]">
+            <Contacto />
+          </article>
+          <article class="lg:m-4 lg:w-2/3 lg:h-[350px]">
+            <MealProject />
+          </article>
+        </article>
+      </section>
+    </section>
   </section>
 </Layout>
-
-
-../components/Navbar.jsx

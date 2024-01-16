@@ -5,41 +5,39 @@ import Tags from "./Tags.astro";
 const { name, height, title } = Astro.props;
 ---
 
-<section class={`p-3 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] border border-gray-700 flex flex-col justify-between w-full rounded-xl h-[${height}px] mt-5 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#23486F] via-[#192532] to-[#10131`}>
+<section class={`lg:bg-white lg:bg-opacity-5 lg:backdrop:blur-xl lg:h-[350px] lg:mt-0 lg:overflow-hidden p-3 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] border border-cyan-600 flex flex-col justify-between w-full rounded-xl h-[${height}px] mt-5`}>
   <section class="h-3/4 p-5 flex flex-wrap justify-left">
     <section class="flex flex-col items-center">
       <article>
-        <h1 class=" text-cyan-300 font-bold text-[1.7rem] mb-3">The Meal Web App</h1>
+        <h1 class=" text-slate-300 font-bold text-2xl mb-3">The Meal Web App</h1>
       </article>
-      <Slider img1={'simpsonsProject1.jpg'} img2={'simpsonsProject2.jpg'} img3={'simpsonsProject3.jpg'}/>
+      <Slider img1={'mealWebImg1.jpg'} img2={'mealWebImg2.jpg'} img3={'#'}/>
       <article class="flex flex-wrap justify-evenly">
         <Tags name = 'HTML' logo = 'htmlLogo.png'/>
         <Tags name = 'CSS' logo = 'cssLogo.png'/>
         <Tags name = 'JavaScript' logo = 'jsLogo.png'/>
         <Tags name = 'ReactJS' logo = 'reactLogo.png'/>
-        <Tags name = 'Firebase' logo = 'firebaseLogo.png'/>
+        <Tags name = 'Tailwind' logo = 'tailwindLogo.jpg'/>
       </article>
       <article>
-        <p class=" text-slate-400 mt-5">Pon a prueba tus conocimientos sobre el icónico 
-          programa de televisión de Los Simpson con este divertido cuestionario 
-          con puntaje global
+        <p class=" text-slate-400 mt-5">Sitio web dinámico y visualmente atractivo creado con React.js y diseñado con Tailwind CSS.
+          Permite a los usuarios explorar y descubrir diversas delicias culinarias. 
         </p>
         <p class="mt-5 text-cyan-400">Desafíos:</p>
         <ul class="text-slate-400 mt-2 list-disc ml-6">
-          <li>Inicio de sesión con google auth</li>
-          <li>Manejo de estado global de jugador activo</li>
-          <li>Manejo de rutas de acceso</li>
-          <li>Base de datos en tiempo real con puntajes actualizados</li>
+          <li>Consumo de API de TheMealDB</li>
+          <li>Filtrado y renderizado de resultados en pantalla de navegador</li>
+          <li>Utilización de Tailwind y Tailwind animated para maquetar y animar sitio web</li>
         </ul>
       </article>
       <section class="w-32 justify-around flex mt-8">
         <button>
-          <a href="https://simpsonsquiz-7b196.firebaseapp.com/" target="_blank" rel="noopener noreferrer" class=" mt-5">
+          <a href="#" target="_blank" rel="noopener noreferrer" class=" mt-5">
             <img src="earthLogo.svg" alt="earthLogo" class="w-10">
           </a>
         </button>
         <button>
-          <a href="https://github.com/Edgardosilva/Simpsons-React-Quiz" target="_blank" rel="noopener noreferrer" class=" mt-5">
+          <a href="https://github.com/Edgardosilva/Meal-App" target="_blank" rel="noopener noreferrer" class=" mt-5">
             <img src="githubSvg.svg" alt="earthLogo" class="w-10">
           </a>
         </button>
