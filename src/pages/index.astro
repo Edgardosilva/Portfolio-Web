@@ -10,7 +10,7 @@ import SobreMi from '../components/SobreMi.astro';
 
 <Layout title="Welcome to Astro.">
   <Navbar client:load />
-  <section class="lg:bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#061930] via-[#08111a] to-[#000000] flex items-center justify-center flex-col">
+  <section class="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#061930] via-[#08111a] to-[#000000] flex items-center justify-center flex-col">
     <section class="w-full flex flex-col lg:max-w-[1300px]">
       <div>
         <div class="relative flex flex-col items-center justify-center mt-[90px] lg:mt-[80px] lg:h-[600px] lg:overflow-hidden">
@@ -19,23 +19,23 @@ import SobreMi from '../components/SobreMi.astro';
           <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black to-transparent lg:h-28"></div>
         </div>
         <div class="absolute w-full h-[100px] flex flex-col items-center pl-5 pr-5 pb-5 mt-[-35px] lg:mt-[-80px] lg:max-w-[1300px]">
-          <h1 class=" text-cyan-300 text-[2.8rem] font-bold leading-tight text-center sm:text-[3.5rem] lg:text-[6rem]">{'<Edgardo Silva />'}</h1>
+          <h1 class=" md:text-[5rem] text-cyan-300 text-[2.8rem] font-bold leading-tight text-center sm:text-[3.5rem] lg:text-[6rem]">{'<Edgardo Silva />'}</h1>
           <h3 class="text-cyan-400 text-[1.3rem] text-center mt-1 sm:text-[1.6rem] lg:text-[2.2rem]">Front-end Developer</h3>
         </div>
-        <div class="flex flex-col mt-[80px] items-center justify-between h-[160px] p-3 lg:mt-[8rem]">
+        <div class="md:mt-36 flex flex-col mt-[80px] items-center justify-between h-[160px] p-3 lg:mt-[8rem]">
           <h3 class="text-slate-300 text-[1.1rem] text-center sm:text-[1.3rem]">Transformando ideas en experiencias digitales únicas e interactivas</h3>
-          <button class=" bg-cyan-800 text-slate-300 w-[220px] h-[50px] rounded-md text-xl font-bold p-1 lg:text-2xl">Descargar CV</button>
+          <button class=" bg-cyan-800 text-slate-300 w-[220px] h-[50px] rounded-md text-xl font-bold p-1 lg:text-2xl hover:text-white hover:bg-cyan-500 hover:shadow-[0px_0px_60px_40px_rgba(4,_140,_185,_0.9)] transition duration-200 ease-in-out">Descargar CV</button>
         </div>
       </div>
     </section>
-    <section class="lg:w-full lg:flex lg:items-center lg:justify-center ">
-      <section class="lg:h-screen lg:flex lg:flex-col lg:mt-10 lg:max-w-[1300px]">
+    <section class="m-8 lg:w-full lg:flex lg:items-center lg:justify-center ">
+      <section class="md:max-w-[640px] lg:h-screen lg:flex lg:flex-col lg:mt-10 lg:max-w-[1300px]">
         <article class="lg:flex">
-          <article class="lg:m-4 lg:w-1/3 lg:h-[370px]">
+          <article class="mt-32 md:flex md:flex-col md:items-center md:justify-center lg:m-4 lg:w-1/3 lg:h-[370px]">
             <h1 class="text-cyan-400 text-4xl font-bold text-center mb-5 lg:hidden">Sobre mi</h1>
             <SobreMi />
           </article>
-          <article class="lg:m-4 lg:w-2/3 lg:h-[350px]">
+          <article class="md:flex md:flex-col md:items-center md:justify-center lg:m-4 lg:w-2/3 lg:h-[350px]">
             <h1 class="text-cyan-400 text-4xl font-bold text-center mt-14 lg:hidden">Proyectos</h1>
             <Proyectos height="500" title="Proyectos"/>
           </article>
@@ -52,7 +52,7 @@ import SobreMi from '../components/SobreMi.astro';
           <article class="lg:m-4 lg:w-1/3 lg:h-[350px]">
             <Contacto />
           </article>
-          <article class="lg:m-4 lg:w-2/3 lg:h-[350px]">
+          <article class="hidden lg:block lg:m-4 lg:w-2/3 lg:h-[350px]">
             <MealProject />
           </article>
         </article>
