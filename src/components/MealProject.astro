@@ -2,18 +2,18 @@
 import Slider from "./Slider";
 import Tags from "./Tags.astro";
 
-const { name, height, title } = Astro.props;
+const { name, title } = Astro.props;
 ---
 
-<section class={`bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-950 via-gray-900 to-slate-950 lg:h-[370px] lg:mt-0 lg:p-0 lg:overflow-hidden p-3 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] border border-slate-700 flex flex-col justify-between w-full rounded-xl h-[${height}px] mt-5`}>
-  <section class="h-3/4 p-5 flex flex-wrap justify-left lg:p-0">
-    <section class="flex flex-col items-center lg:flex-row">
-      <article class="lg:border lg:hidden">
-        <h1 class=" text-cyan-600 font-bold text-2xl mb-3">The Meal Web App</h1>
+<section class={`bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-950 via-gray-900 to-slate-950 lg:h-[370px] lg:mt-0 lg:p-0 lg:overflow-hidden p-3 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] border border-slate-700 flex flex-col justify-center w-full rounded-xl mt-5`}>
+  <section class="p-5 lg:p-0">
+    <section class="flex flex-col items-center justify-center lg:flex-row">
+      <article>
+        <h1 class=" lg:hidden text-cyan-600 font-bold text-2xl mb-3">The Meal Web App</h1>
       </article>
-      <section class="lg:m-8">
-        <article class="lg:w-[350px]">
-           <Slider img1={'mealFinal1.jpg'} img2={'bm1.jpg'} img3={'#'}/>
+      <section class="lg:m-5 xl:m-8">
+        <article class="lg:w-[280px] xl:w-[350px]">
+          <Slider img1={'mealFinal1.jpg'} img2={'bm1.jpg'} img3={'#'}/>
         </article>
         <article class="flex flex-wrap justify-evenly">
           <Tags name = 'HTML' logo = 'htmlLogo.png'/>
@@ -24,8 +24,8 @@ const { name, height, title } = Astro.props;
         </article>
       </section>
       <section>
-        <article class="lg:m-5 lg:ml-0">
-          <h1 class=" text-cyan-600 lg:font-bold lg:text-2xl lg:mb-3 lg:text-left">The Meal Web App</h1>
+        <article class="lg:scale-95 lg:mt-0 lg:flex lg:flex-col lg:justify-center m-2 p-2">
+          <h1 class=" hidden lg:block text-cyan-600 lg:font-bold lg:text-2xl lg:text-left">The Meal Web App</h1>
           <p class=" text-slate-400 mt-5">Web dinámica y visualmente atractivo creado con React.js y Tailwind CSS.
             Permite a los usuarios explorar y descubrir diversas preparaciones. 
           </p>

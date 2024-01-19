@@ -28,20 +28,20 @@ import SobreMi from '../components/SobreMi.astro';
         </div>
       </div>
     </section>
-    <section class="m-8 lg:w-full lg:flex lg:items-center lg:justify-center ">
+    <section class="m-8 lg:w-full lg:flex lg:items-center lg:justify-center">
       <section class="md:max-w-[640px] lg:h-screen lg:flex lg:flex-col lg:mt-10 lg:max-w-[1300px]">
         <article class="lg:flex">
           <article class="mt-32 md:flex md:flex-col md:items-center md:justify-center lg:m-4 lg:w-1/3 lg:h-[370px]">
             <h1 class="text-cyan-400 text-4xl font-bold text-center mb-5 lg:hidden">Sobre mi</h1>
             <SobreMi />
           </article>
-          <article class="md:flex md:flex-col md:items-center md:justify-center lg:m-4 lg:w-2/3 lg:h-[350px]">
+          <article class="m-4 lg:w-2/3 ">
             <h1 class="text-cyan-400 text-4xl font-bold text-center mt-14 lg:hidden">Proyectos</h1>
-            <Proyectos height="500" title="Proyectos"/>
+            <Proyectos title="Proyectos"/>
           </article>
         </article>
         <article class="lg:flex">
-          <article class="lg:m-4 lg:w-2/3 lg:h-[360px]">
+          <article class="m-4 lg:w-2/3">
             <MealProject />
           </article>
           <article class="lg:m-4 lg:w-1/3 lg:h-[370px]">
@@ -52,7 +52,7 @@ import SobreMi from '../components/SobreMi.astro';
           <article class="lg:m-4 lg:w-1/3 lg:h-[350px]">
             <Contacto />
           </article>
-          <article class="hidden lg:block lg:m-4 lg:w-2/3 lg:h-[350px]">
+          <article class="m-4 lg:w-2/3">
             <MealProject />
           </article>
         </article>
