@@ -5,14 +5,14 @@ import Tags from "./Tags.astro";
 const { name, title } = Astro.props;
 ---
 
-<section class={`bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-950 via-gray-900 to-slate-950 lg:h-[370px] lg:mt-0 lg:p-0 lg:overflow-hidden p-3 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] border border-slate-700 flex flex-col justify-center w-full rounded-xl mt-5`}>
+<section class={` bg-[#0e1d2c] lg:h-[370px] lg:mt-0 lg:p-0 lg:overflow-hidden p-3 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] flex flex-col justify-center w-full rounded-3xl mt-5`}>
   <section class="p-5 lg:p-0">
     <section class="flex flex-col items-center justify-center lg:flex-row">
       <article>
-        <h1 class=" lg:hidden text-cyan-600 font-bold text-2xl mb-3">Simpsons Quiz App</h1>
+        <h1 class=" lg:hidden text-cyan-600 font-bold text-2xl mb-3">Simpsons Quiz</h1>
       </article>
       <section class="lg:m-5 xl:m-8">
-        <article class="lg:w-[280px] xl:w-[350px]">
+        <article class="lg:w-[280px] xl:w-[350px] relative">
           <Slider img1={'simpsonsProject1.jpg'} img2={'simpsonsProject2.jpg'} img3={'simpsonsProject3.jpg'}/>
         </article>
         <article class="flex flex-wrap justify-evenly">
@@ -24,21 +24,21 @@ const { name, title } = Astro.props;
         </article>
       </section>
       <section>
-        <article class="lg:scale-95 lg:mt-0 lg:flex lg:flex-col lg:justify-center m-2 p-2">
-          <h1 class=" hidden lg:block text-cyan-600 lg:font-bold lg:text-2xl lg:text-left">Simpsons Quiz App</h1>
-          <p class=" text-slate-400 mt-5">Pon a prueba tus conocimientos sobre el icónico 
+        <article class="lg:scale-95 lg:mt-0 lg:flex lg:flex-col lg:justify-center  lg:p-2">
+          <h1 class=" hidden lg:block bg-gradient-to-r from-[#ffc456] to-[#36bed6] bg-clip-text tracking-tight text-transparent lg:font-bold lg:text-2xl lg:text-left">Proyecto: Simpsons Quiz</h1>
+          <p class=" text-slate-300 mt-5 mr-5">Pon a prueba tus conocimientos sobre el icónico 
             programa de televisión de Los Simpson con este divertido cuestionario 
             con puntaje global
           </p>
-          <p class="mt-5 text-cyan-400">Desafíos:</p>
-          <ul class="text-slate-400 mt-2 list-disc ml-6">
+          <p class="mt-5 bg-gradient-to-r from-[#ffc456] to-[#36bed6] bg-clip-text tracking-tight text-transparent">Desafíos:</p>
+          <ul class="text-slate-300 mt-2 list-disc ml-6">
             <li>Inicio de sesión con google auth</li>
             <li>Manejo de estado global de jugador activo</li>
             <li>Manejo de rutas de acceso</li>
             <li>Base de datos en tiempo real con puntajes actualizados</li>
           </ul>
         </article>
-        <article class="w-32 justify-around flex mt-8 lg:hidden">
+        <article class="lg:w-32 justify-around flex mt-4 lg:hidden">
           <button>
             <a href="https://simpsonsquiz-7b196.firebaseapp.com/" target="_blank" rel="noopener noreferrer" class=" mt-5">
               <img src="earthLogo.svg" alt="earthLogo" class="w-10 lg:w-8">

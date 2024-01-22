@@ -10,16 +10,16 @@ import SobreMi from '../components/SobreMi.astro';
 
 <Layout title="Welcome to Astro.">
   <Navbar client:load />
-  <section class="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#061930] via-[#08111a] to-[#000000] flex items-center justify-center flex-col">
+  <section class="bg-[#09101a] flex items-center justify-center flex-col">
     <section class="w-full flex flex-col lg:max-w-[1300px]">
       <div>
-        <div class="relative flex flex-col items-center justify-center mt-[90px] lg:mt-[80px] lg:h-[600px] lg:overflow-hidden">
+        <div class="relative flex flex-col items-center justify-center mt-[70px] lg:mt-[80px] lg:h-[600px] lg:overflow-hidden">
           <img src="avatarAI.png" alt="Descripción de la imagen" class="w-full">
           <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black to-transparent lg:h-52"></div>
           <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black to-transparent lg:h-28"></div>
         </div>
-        <div class="absolute w-full h-[100px] flex flex-col items-center pl-5 pr-5 pb-5 mt-[-35px] lg:mt-[-80px] lg:max-w-[1300px]">
-          <h1 class=" md:text-[5rem] text-cyan-300 text-[2.8rem] font-bold leading-tight text-center sm:text-[3.5rem] lg:text-[6rem]">{'<Edgardo Silva />'}</h1>
+        <div class="absolute w-full h-[100px] flex flex-col items-center pl-5 pr-5 pb-5 mt-[-35px] lg:mt-[-95px] lg:max-w-[1300px]">
+          <h1 class=" md:text-[5rem] bg-gradient-to-r from-[#ffc456] to-[#2ca6bb] bg-clip-text text-7xl tracking-tight text-transparent text-[48px] font-bold leading-tight text-center sm:text-[3.5rem] xl:text-[7.5rem]">{'<Edgardo Silva />'}</h1>
           <h3 class="text-cyan-400 text-[1.3rem] text-center mt-1 sm:text-[1.6rem] lg:text-[2.2rem]">Front-end Developer</h3>
         </div>
         <div class="md:mt-36 flex flex-col mt-[80px] items-center justify-between h-[160px] p-3 lg:mt-[8rem]">
@@ -28,31 +28,31 @@ import SobreMi from '../components/SobreMi.astro';
         </div>
       </div>
     </section>
-    <section class="m-8 lg:w-full lg:flex lg:items-center lg:justify-center">
+    <section class="m-3 lg:w-full lg:flex lg:items-center lg:justify-center">
       <section class="md:max-w-[640px] lg:h-screen lg:flex lg:flex-col lg:mt-10 lg:max-w-[1300px]">
-        <article class="lg:flex">
-          <article class="mt-32 md:flex md:flex-col md:items-center md:justify-center lg:m-4 lg:w-1/3 lg:h-[370px]">
-            <h1 class="text-cyan-400 text-4xl font-bold text-center mb-5 lg:hidden">Sobre mi</h1>
+        <article class="lg:flex lg:items-center ">
+          <article class="mt-32 md:flex md:flex-col md:items-center md:justify-center lg:m-3 lg:w-1/3 lg:h-[370px]">
+            <h1 class="bg-gradient-to-r from-[#ffc456] to-[#36bed6] bg-clip-text tracking-tight text-transparent lg:font-bold text-4xl font-bold text-center mb-5 lg:hidden">Sobre mi</h1>
             <SobreMi />
           </article>
-          <article class="m-4 lg:w-2/3 ">
-            <h1 class="text-cyan-400 text-4xl font-bold text-center mt-14 lg:hidden">Proyectos</h1>
+          <article class="lg:w-2/3 lg:m-3">
+            <h1 class="bg-gradient-to-r from-[#ffc456] to-[#36bed6] bg-clip-text tracking-tight text-transparent lg:font-bold text-4xl font-bold text-center mt-14 lg:hidden">Proyectos</h1>
             <Proyectos title="Proyectos"/>
           </article>
         </article>
-        <article class="lg:flex">
-          <article class="m-4 lg:w-2/3">
+        <article class="lg:flex lg:items-center lg:justify-center">
+          <article class="lg:w-2/3 lg:m-3">
             <MealProject />
           </article>
-          <article class="lg:m-4 lg:w-1/3 lg:h-[370px]">
+          <article class="lg:m-2 lg:w-1/3 lg:h-[370px]">
             <Skills title="Skills"/>
           </article>
         </article>
-        <article class="lg:flex">
-          <article class="lg:m-4 lg:w-1/3 lg:h-[350px]">
+        <article class="lg:flex lg:items-center">
+          <article class="lg:m-3 lg:w-1/3 lg:h-[370px]">
             <Contacto />
           </article>
-          <article class="m-4 lg:w-2/3">
+          <article class="lg:w-2/3 lg:m-3 hidden lg:block">
             <MealProject />
           </article>
         </article>
