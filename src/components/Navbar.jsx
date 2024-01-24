@@ -14,7 +14,7 @@ const Navbar = () => {
       <img src="logo.svg" className="w-[40px] md:hidden" onClick={handleClick} />
       <ul className={`bg-black bg-opacity-80 bg-blur-lg animate-fade-right animate-duration-[300ms] w-full h-10 hidden md:flex sm:justify-center md:items-center md:bg-transparent`}>
         <li><CategoryNav text = 'Home'/></li>
-        <li><CategoryNav text = 'Sobre mi'/></li>
+        <li><CategoryNav text = 'Sobre mi' id='sobremi'/></li>
         <li><CategoryNav text = 'Proyetos'/></li>
         <li><CategoryNav text = 'Contacto'/></li>
       </ul>
