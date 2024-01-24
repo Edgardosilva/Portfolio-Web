@@ -5,7 +5,7 @@ import Tags from "./Tags.astro";
 const { name, title } = Astro.props;
 ---
 
-<section class={` bg-[#0e1d2c] lg:h-[370px] lg:mt-0 lg:p-0 lg:overflow-hidden p-3 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] flex flex-col justify-center w-full rounded-3xl mt-5`}>
+<section class={` relative hover:cursor-pointer bg-[#0e1d2c] lg:h-[370px] lg:mt-0 lg:p-0 lg:overflow-hidden p-3 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] flex flex-col justify-center w-full rounded-3xl mt-5`}>
   <section class="p-5 lg:p-0">
     <section class="flex flex-col items-center justify-center lg:flex-row">
       <article>
@@ -23,8 +23,8 @@ const { name, title } = Astro.props;
           <Tags name = 'Firebase' logo = 'firebaseLogo.png'/>
         </article>
       </section>
-      <section>
-        <article class="lg:scale-95 lg:mt-0 lg:flex lg:flex-col lg:justify-center  lg:p-2">
+      <section >
+        <article class="lg:scale-95 lg:mt-0 lg:flex lg:flex-col lg:justify-center lg:p-2">
           <h1 class=" hidden lg:block bg-gradient-to-r from-[#ffc456] to-[#36bed6] bg-clip-text tracking-tight text-transparent lg:font-bold lg:text-2xl lg:text-left">Proyecto: Simpsons Quiz</h1>
           <p class=" text-slate-300 mt-5 mr-5">Pon a prueba tus conocimientos sobre el icónico 
             programa de televisión de Los Simpson con este divertido cuestionario 
@@ -38,15 +38,15 @@ const { name, title } = Astro.props;
             <li>Base de datos en tiempo real con puntajes actualizados</li>
           </ul>
         </article>
-        <article class="lg:w-32 justify-around flex mt-4 lg:hidden">
+        <article class=" lg:bg-white lg:bg-opacity-5 lg:backdrop-blur-2xl lg:w-full lg:h-full justify-evenly flex mt-4 lg:absolute bottom-0 right-0 opacity-0 hover:opacity-100 transition-opacity duration-200">
           <button>
             <a href="https://simpsonsquiz-7b196.firebaseapp.com/" target="_blank" rel="noopener noreferrer" class=" mt-5">
-              <img src="earthLogo.svg" alt="earthLogo" class="w-10 lg:w-8">
+              <img src="earthLogo.svg" alt="earthLogo" class="w-10 lg:w-14 hover:scale-150 transition-transform">
             </a>
           </button>
           <button>
             <a href="https://github.com/Edgardosilva/Simpsons-React-Quiz" target="_blank" rel="noopener noreferrer" class=" mt-5">
-              <img src="githubSvg.svg" alt="earthLogo" class="w-10 lg:w-8">
+              <img src="githubSvg.svg" alt="earthLogo" class="w-10 lg:w-14 hover:scale-150 transition-transform">
             </a>
           </button>
         </article>
