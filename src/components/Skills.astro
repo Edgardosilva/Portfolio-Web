@@ -1,24 +1,24 @@
 ---
-const { name, height, title } = Astro.props;
+const { t1, t2, t3, t4 } = Astro.props;
 ---
 
-<section class={`pb-5 mt-5 pt-2 bg-[#0e1d2c] lg:h-[370px] lg:mt-0 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] flex flex-col w-full rounded-3xl h-[${height}px]`}>
+<section class={`pb-5 mt-5 pt-2 bg-[#0e1d2c] lg:h-[370px] lg:mt-0 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] flex flex-col w-full rounded-3xl`}>
   <h1 class="bg-gradient-to-r from-[#ffc456] to-[#36bed6] bg-clip-text tracking-tight text-transparent lg:font-bold font-bold text-2xl mb-3 text-left m-5 ml-14">Tecnologías utilizadas</h1>
   <article class="flex justify-center items-center">
     <div class="flex flex-col items-center">
-      <div class="hover:scale-110 m-2 border border-gray-700 w-36 h-36 flex items-center justify-center bg-white bg-opacity-5  backdrop-blur-xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] rounded-xl">
-        <img src="jsLogo.png" class=" w-20 h-20 rounded-xl"/>
+      <div class=" m-2 border border-gray-700 w-36 h-36 flex items-center justify-center bg-white bg-opacity-5  backdrop-blur-xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] rounded-xl">
+        <img src={t1} class=" w-20 h-20 rounded-xl"/>
       </div>
-      <div class="hover:scale-110 m-2 border border-gray-700 w-[6rem] h-[6rem] flex items-center justify-center bg-white bg-opacity-5  backdrop-blur-xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] rounded-xl">
-        <img src="tailwindLogo.jpg" class=" w-[3.5rem]  h-[3.5rem] rounded-xl"/>
+      <div class=" m-2 border border-gray-700 w-[6rem] h-[6rem] flex items-center justify-center bg-white bg-opacity-5  backdrop-blur-xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] rounded-xl">
+        <img src={t2} class=" w-[3.5rem]  h-[3.5rem] rounded-xl" />
       </div>
     </div>
     <div class="flex flex-col items-center">
-      <div class="hover:scale-110 m-2 border border-gray-700 w-28 h-28 flex items-center justify-center bg-white bg-opacity-5  backdrop-blur-xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] rounded-xl">
-        <img src="htmlLogo.png" class=" w-16 h-16 rounded-xl"/>
+      <div class=" m-2 border border-gray-700 w-28 h-28 flex items-center justify-center bg-white bg-opacity-5  backdrop-blur-xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] rounded-xl">
+        <img src={t3} class=" w-16 h-16 rounded-xl"/>
       </div>
-      <div class="hover:scale-110 m-2 border border-gray-700 w-32 h-32 flex items-center justify-center bg-white bg-opacity-5  backdrop-blur-xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] rounded-xl">
-        <img src="reactLogo.png" class=" w-16  h-16 rounded-xl"/>
+      <div class=" m-2 border border-gray-700 w-32 h-32 flex items-center justify-center bg-white bg-opacity-5  backdrop-blur-xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] rounded-xl">
+        <img src={t4} class=" w-16  h-16 rounded-xl"/>
       </div>      
     </div>
   </article>

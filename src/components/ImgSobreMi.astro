@@ -2,7 +2,17 @@
 const { name, height, title } = Astro.props;
 ---
 <section class="flex items-center justify-center">
-    <img src="edgardo.jpg" class="rounded-3xl w-[250px]"/>
+    <img src="edgardo.jpg" class="rounded-3xl w-[250px] relative"/>
+    <section class="gap-20 absolute w-[200px] h-[320px]">
+        <a href="https://www.linkedin.com/in/edgardo-silva/" target="_blank" rel="noopener noreferrer">
+            <img src="ldin.png" alt="ldinLogo" class="w-10 absolute bottom-0 left-9 transition-transform hover:scale-125 hover:cursor-pointer">
+        </a>
+        <a href="https://github.com/Edgardosilva" target="_blank" rel="noopener noreferrer">
+            <img src="githubSvg.svg" alt="gitHubLogo" class="w-10 absolute bottom-0 left-32 transition-transform hover:scale-125 hover:cursor-pointer">
+        </a>
+    </section>
 </section>    
+
+
 
 
