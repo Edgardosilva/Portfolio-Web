@@ -2,27 +2,29 @@
 const { name, height, title } = Astro.props;
 ---
 
-  <section class={`  p-3 md:max-w-[640px] bg-[#0e1d2c] lg:h-[370px] lg:mt-0 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] flex flex-col items-center  justify-center w-full rounded-3xl mt-5`}>
-    <article class=" overflow-y-scroll lg:h-[350px] lg:scale-95 lg:flex lg:flex-col m-2 p-3">
-      <h1 class="hidden lg:block bg-gradient-to-r from-[#ffc456] to-[#36bed6] bg-clip-text tracking-tight text-transparent lg:font-bold lg:text-2xl lg:mb-3 lg:text-left">Sobre mi</h1>
-      <p class="text-slate-300"> 
+<section>
+  <h1 class="bg-gradient-to-r from-[#ffc456] to-[#36bed6] bg-clip-text tracking-tight text-transparent lg:font-bold text-4xl font-bold mb-10">Sobre mi</h1>
+  <section class="flex items-center">
+    <aricle>
+      <p class="text-slate-300 text-[18px]"> 
         Mi nombre es Edgardo Silva, Ingeniero en Prevencion de Riesgos Laborales, 
         tras unos años ejerciendo, me pasé al mundo de la programación. Actualmente 
         me encuentro terminando mis estudios como Analista Programador Computacional
       </p>
-      <br/>
-      <p class="text-slate-300">
+      <br />
+      <p class="text-slate-300 text-[18px]">
         Mi experiencia previa como ingeniero me ha permitido desarrollar habilidades 
-        indispensables en este rubro como el trabajo en equipos, la resolución de problemas,
-        la capacidad de análisis y la toma de decisiones.
+        indispensables en este rubro como el trabajo en equipos, la <strong class=" text-orange-300">resolución de problemas</strong>,
+        la <strong class="text-orange-300">capacidad de análisis</strong> y la toma de decisiones.
       </p>
-      <br/>
-      <p class="text-slate-300">
+      <br />
+      <p class="text-slate-300 text-[18px]">
         Si bien no he tenido aún la oportunidad ingresar laboralmente en 
         el área IT, si cuento con experiencia desarrollando aplicaciones web, 
         y he creado algunos proyectos personales que puedes ver en mi portafolio.
       </p>
-    </article>
+    </aricle>
+  </section>
 </section>
 
 

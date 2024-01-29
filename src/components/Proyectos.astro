@@ -15,7 +15,7 @@ const { name, title } = Astro.props;
         <article class="lg:w-[280px] xl:w-[350px] relative">
           <Slider img1={'simpsonsProject1.jpg'} img2={'simpsonsProject2.jpg'} img3={'simpsonsProject3.jpg'}/>
         </article>
-        <article class="flex flex-wrap justify-evenly">
+        <article class="flex flex-wrap justify-evenly lg:hidden">
           <Tags name = 'HTML' logo = 'htmlLogo.png'/>
           <Tags name = 'CSS' logo = 'cssLogo.png'/>
           <Tags name = 'JavaScript' logo = 'jsLogo.png'/>
@@ -38,7 +38,7 @@ const { name, title } = Astro.props;
             <li>Base de datos en tiempo real con puntajes actualizados</li>
           </ul>
         </article>
-        <article class=" lg:bg-white lg:bg-opacity-5 lg:backdrop-blur-2xl lg:w-full lg:h-full justify-evenly flex mt-4 lg:absolute bottom-0 right-0 opacity-0 hover:opacity-100 transition-opacity duration-200">
+        <article class=" lg:bg-white lg:bg-opacity-5 lg:backdrop-blur-2xl lg:w-full lg:h-full justify-evenly flex mt-4 lg:absolute bottom-0 right-0 lg:opacity-0 hover:opacity-100 transition-opacity duration-200">
           <button>
             <a href="https://simpsonsquiz-7b196.firebaseapp.com/" target="_blank" rel="noopener noreferrer" class=" mt-5">
               <img src="earthLogo.svg" alt="earthLogo" class="w-10 lg:w-14 hover:scale-150 transition-transform">

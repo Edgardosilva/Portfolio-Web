@@ -6,6 +6,7 @@ import Contacto from '../components/Contacto.astro';
 import Navbar from '../components/Navbar.jsx';
 import MealProject from '../components/MealProject.astro';
 import SobreMi from '../components/SobreMi.astro';
+import ImgSobreMi from '../components/ImgSobreMi.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -30,16 +31,23 @@ import SobreMi from '../components/SobreMi.astro';
     </section>
     <section class="m-3 lg:w-full lg:flex lg:items-center lg:justify-center">
       <section class="md:max-w-[640px] lg:h-screen lg:flex lg:flex-col lg:mt-10 lg:max-w-[1300px]">
-        <article class="lg:flex lg:items-center ">
-          <article id="sobremi" class=" mt-32 md:flex md:flex-col md:items-center md:justify-center lg:m-3 lg:w-1/3 lg:h-[370px]">
-            <h1 class="bg-gradient-to-r from-[#ffc456] to-[#36bed6] bg-clip-text tracking-tight text-transparent lg:font-bold text-4xl font-bold text-center mb-5 lg:hidden">Sobre mi</h1>
+        <article class="lg:flex sm:items-center xl:items-end lg:justify-center mb-36 mt-24">
+          <article class="lg:w-3/6">
             <SobreMi />
           </article>
-          <article class="lg:w-2/3 lg:m-3">
-            <h1 class="bg-gradient-to-r from-[#ffc456] to-[#36bed6] bg-clip-text tracking-tight text-transparent lg:font-bold text-4xl font-bold text-center mt-14 lg:hidden">Proyectos</h1>
-            <Proyectos title="Proyectos"/>
+          <article class="lg:m-2 lg:w-1/3 mt-20 ">
+            <ImgSobreMi />
           </article>
         </article>
+        <article class="lg:flex lg:items-center ">
+          <article class="lg:w-1/3 lg:m-3 hidden lg:block">
+            <Skills title="Skills"/>
+          </article>
+          <article class="lg:m-2 lg:w-2/3 lg:h-[370px]">
+            <Proyectos />
+          </article>
+        </article>
+
         <article class="lg:flex lg:items-center lg:justify-center">
           <article class="lg:w-2/3 lg:m-3">
             <MealProject />
@@ -48,14 +56,16 @@ import SobreMi from '../components/SobreMi.astro';
             <Skills title="Skills"/>
           </article>
         </article>
+
         <article class="lg:flex lg:items-center">
           <article class="lg:m-3 lg:w-1/3 lg:h-[370px]">
-            <Contacto />
+            <Skills title="Skills"/>
           </article>
           <article class="lg:w-2/3 lg:m-3 hidden lg:block">
             <MealProject />
           </article>
         </article>
+        
       </section>
     </section>
   </section>
