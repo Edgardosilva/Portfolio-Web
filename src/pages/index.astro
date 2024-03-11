@@ -10,30 +10,24 @@ import ImgSobreMi from '../components/ImgSobreMi.astro';
 
 <Layout title="Edgardo Silva Web">
   <Navbar client:load />
-  <section class="bg-[#09101a] flex items-center justify-center flex-col">
-    <section class="w-full flex flex-col lg:max-w-[1300px]"  id="inicio">
-      <div>
-        <div class="relative flex flex-col items-center justify-center mt-[70px] lg:mt-[80px] lg:h-[600px] lg:overflow-hidden">
-          <img src="avatarAI.png" alt="Descripción de la imagen" class="w-full">
-          <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black to-transparent lg:h-52"></div>
-          <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black to-transparent lg:h-28"></div>
-        </div>
-        <div class="absolute w-full h-[100px] flex flex-col items-center pl-5 pr-5 pb-5 mt-[-35px] lg:mt-[-95px] lg:max-w-[1300px]">
-          <h1 class=" md:text-[5rem] bg-gradient-to-r from-[#ffc456] to-[#2ca6bb] bg-clip-text text-7xl tracking-tight text-transparent text-[48px] font-bold leading-tight text-center sm:text-[3.5rem] xl:text-[7.5rem]">{'<Edgardo Silva />'}</h1>
-          <h3 class="text-cyan-400 text-[1.3rem] text-center mt-1 sm:text-[1.6rem] lg:text-[2.2rem]">Front-end Developer</h3>
-        </div>
-        <div class="md:mt-36 flex flex-col mt-[80px] items-center justify-between h-[160px] p-3 lg:mt-[8rem]">
-          <h3 class="text-slate-300 text-[1.1rem] text-center sm:text-[1.3rem]">Transformando ideas en experiencias digitales únicas e interactivas</h3>
+  <section class="flex items-center justify-center flex-col">
+    <section class="w-full flex flex-col"  id="inicio">
+      <article class=" mt-20 h-[600px] flex flex-col justify-center items-center">
+        <article class=" flex flex-col items-center h-[380px] md:h-[450px] justify-between p-5">
+          <h2 class="text-4xl md:text-6xl lg:text-[5xl] text-[#ffc456] text-center ">Frontend Developer</h2>
+          <h1 class="text-[5rem] md:text-[6rem] lg:text-[8rem] text-center font-bold bg-gradient-to-r from-[#ffc456] via-blue-500 to-green-400 text-transparent bg-clip-text bg-300% animate-gradient">
+            {'Edgardo Silva'}
+          </h1>
           <a href="Edgardo Silva - CV.pdf" download="Edgardo Silva CV.pdf">
-            <button class=" bg-cyan-800 text-slate-300 w-[220px] h-[50px] rounded-md text-xl font-bold p-1 lg:text-2xl hover:text-white hover:bg-cyan-500 hover:shadow-[0px_0px_60px_40px_rgba(4,_140,_185,_0.9)] transition duration-200 ease-in-out">Descargar CV</button>
+            <button class="mt-8  bg-cyan-800 text-slate-300 w-fit rounded-xl text-xl font-bold p-5 lg:text-2xl hover:text-white hover:bg-cyan-500 hover:shadow-[0px_0px_60px_40px_rgba(4,_140,_185,_0.9)] transition duration-200 ease-in-out">Descargar CV</button>
           </a>
-        </div>
-      </div>
+        </article>
+      </article>
     </section>
-    <section class="m-3 lg:w-full lg:flex lg:items-center lg:justify-center ">
-      <section class="mb-[300px] md:max-w-[640px] lg:h-screen lg:flex lg:flex-col lg:mt-10 lg:max-w-[1300px]  items-center">
-        <article class="lg:flex sm:items-center xl:items-end lg:justify-center mb-36 mt-24">
-          <article class="lg:w-[900px] m-3">
+    <section class="bg-from-[#212131] to-transparent p-8 md:p-0 lg:w-full lg:flex lg:items-center lg:justify-center ">
+      <section class="mb-[300px] md:max-w-[640px] lg:h-screen lg:flex lg:flex-col lg:mt-10 lg:max-w-[1300px] ">
+        <article class=" lg:flex sm:items-center xl:items-end lg:justify-center mb-36">
+          <article class="lg:w-[1100px] m-3">
             <SobreMi />
           </article>
           <article class="lg:m-2 lg:w-1/3 mt-20 ">
@@ -41,9 +35,9 @@ import ImgSobreMi from '../components/ImgSobreMi.astro';
           </article>
         </article>
         <article>
-          <h1 id="proyectos" class="bg-gradient-to-r from-[#ffc456] to-[#36bed6] bg-clip-text tracking-tight text-transparent lg:font-bold text-4xl font-bold mb-10">Proyectos</h1>
+          <h1 class="text-[#ffc456] lg:font-bold text-4xl font-bold mb-10 m-3">Proyectos</h1>
         </article>
-        <article class="lg:flex lg:items-center ">
+        <article class="lg:flex lg:items-center">
           <article class="lg:w-1/3 lg:m-3 hidden lg:block">
             <Skills 
               t1 = 'reactLogo.png'
@@ -52,11 +46,10 @@ import ImgSobreMi from '../components/ImgSobreMi.astro';
               t4 = 'firebaseLogo.png'
             />
           </article>
-          <article class="lg:m-2 lg:w-2/3 lg:h-[370px]">
+          <article class="lg:w-2/3 lg:h-[370px] m-3">
             <Proyectos />
           </article>
         </article>
-
         <article class="lg:flex lg:items-center lg:justify-center">
           <article class="lg:w-2/3 lg:m-3">
             <MealProject />
