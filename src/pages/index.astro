@@ -6,6 +6,8 @@ import Navbar from '../components/Navbar.jsx';
 import MealProject from '../components/MealProject.astro';
 import SobreMi from '../components/SobreMi.astro';
 import ImgSobreMi from '../components/ImgSobreMi.astro';
+import Meethub from '../components/Meethub.astro';
+import MeetHubDescription from '../components/MeetHubDescription.astro';
 ---
 
 <Layout title="Edgardo Silva Web">
@@ -25,7 +27,7 @@ import ImgSobreMi from '../components/ImgSobreMi.astro';
       </article>
     </section>
     <section class="bg-from-[#212131] to-transparent p-8 md:p-0 lg:w-full lg:flex lg:items-center lg:justify-center ">
-      <section class="mb-[300px] md:max-w-[640px] lg:h-screen lg:flex lg:flex-col lg:mt-10 lg:max-w-[1300px] ">
+      <section class="md:max-w-[640px] lg:h-screen lg:flex lg:flex-col lg:mt-10 lg:max-w-[1300px] ">
         <article class=" lg:flex sm:items-center xl:items-end lg:justify-center mb-36">
           <article class="lg:w-[1100px] m-3">
             <SobreMi />
@@ -40,16 +42,23 @@ import ImgSobreMi from '../components/ImgSobreMi.astro';
         <article class="lg:flex lg:items-center">
           <article class="lg:w-1/3 lg:m-3 hidden lg:block">
             <Skills 
-              t1 = 'reactLogo.png'
-              t2 = 'cssLogo.png'
-              t3 = 'jsLogo.png'
-              t4 = 'firebaseLogo.png'
+              t1 = 'nextLogo.jpg'
+              t2 = 'jsLogo.png'
+              t3 = 'tailwindLogo.jpg'
+              t4 = 'reactLogo.png'
             />
           </article>
-          <article class="lg:w-2/3 lg:h-[370px] m-3">
-            <Proyectos />
+          <article class="lg:w-2/3 lg:h-[370px] lg:m-3">
+            <Meethub />
           </article>
         </article>
+
+        <article class="lg:flex lg:items-center hidden">
+          <article class="lg:w-full lg:h-[370px] m-3">
+            <MeetHubDescription />
+          </article>
+        </article>
+
         <article class="lg:flex lg:items-center lg:justify-center">
           <article class="lg:w-2/3 lg:m-3">
             <MealProject />
@@ -63,6 +72,25 @@ import ImgSobreMi from '../components/ImgSobreMi.astro';
             />
           </article>
         </article>
+
+        <article class="lg:flex lg:items-center">
+          <article class="lg:w-1/3 lg:m-3 hidden lg:block">
+            <Skills 
+              t1 = 'reactLogo.png'
+              t2 = 'cssLogo.png'
+              t3 = 'jsLogo.png'
+              t4 = 'firebaseLogo.png'
+            />
+          </article>
+          <article class="lg:w-2/3 lg:h-[370px] lg:m-3">
+            <Proyectos />
+          </article>
+        </article>
+        <footer>
+          <section class=" text-white mt-40 backdrop-blur-lg p-5 flex justify-center items-center">
+            <p class="text-center">© 2024 Edgardo Silva</p>
+          </section>
+        </footer>
       </section>
     </section>
   </section>

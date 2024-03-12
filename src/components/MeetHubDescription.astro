@@ -1,0 +1,61 @@
+---
+import Slider from "./Slider";
+import Tags from "./Tags.astro";
+
+const { name, title } = Astro.props;
+---
+
+<section class={`relative bg-white bg-opacity-5 h-full lg:mt-0 lg:p-0 lg:overflow-hidden p-3 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] rounded-3xl`}>
+  <section class="p-5 lg:p-0">
+    <section class="flex flex-col lg:flex-row">
+      <article>
+        <h1 class=" lg:hidden text-cyan-600 font-bold text-2xl mb-3">The Meal Web App</h1>
+      </article>
+      <section class="lg:hidden lg:m-5 xl:m-8">
+        <article class="flex flex-wrap justify-evenly lg:hidden">
+          <Tags name = 'HTML' logo = 'htmlLogo.png'/>
+          <Tags name = 'CSS' logo = 'cssLogo.png'/>
+          <Tags name = 'JavaScript' logo = 'jsLogo.png'/>
+          <Tags name = 'ReactJS' logo = 'reactLogo.png'/>
+          <Tags name = 'Tailwind' logo = 'tailwindLogo.jpg'/>
+        </article>
+      </section>
+      <section class="w-full h-[370px] p-6 hidden lg:flex">
+        <article class="border-r border-[#61492156] w-1/3 p-3">
+            <div class="flex gap-4 items-center justify-center">
+                <img src="calendar-event.svg" alt="calendarEvent" class="w-8">
+                <h1 class="bg-gradient-to-r from-[#ffc456] to-[#36bed6] bg-clip-text text-2xl text-transparent text-center">Organización de Eventos</h1>
+            </div>
+            <p class=" text-slate-300 mt-5 text-center p-5">
+                MeetHub proporciona una plataforma intuitiva que simplifica tanto la 
+                exploración como la organización de eventos.
+                Los usuarios pueden descubrir 
+                una amplia gama de eventos interesantes y, al mismo tiempo, organizar sus 
+                propias actividades de manera fácil y eficiente.
+            </p>
+        </article>
+        <article class=" w-1/3 p-3">
+            <div class="flex gap-4 items-center justify-center">
+                <img src="google.svg" alt="calendarEvent" class="w-8">
+                <h1 class="bg-gradient-to-r from-[#ffc456] to-[#36bed6] bg-clip-text text-2xl text-transparent text-center">Registro con cuenta Google</h1>
+            </div>
+            <p class=" text-slate-300 mt-5 text-center p-5">
+                Facilitamos el proceso de registro mediante la integración con cuentas de Google. Esto no solo simplifica la entrada al sistema, sino que también mejora la seguridad y la confiabilidad del acceso a la plataforma, permitiendo a los usuarios sumergirse rápidamente en la experiencia de MeetHub.
+            </p>
+        </article>
+        <article class="border-l border-[#61492156] w-1/3 p-3">
+            <div class="flex gap-4 items-center justify-center">
+                <img src="calendar-check.svg" alt="calendarEvent" class="w-8">
+                <h1 class="bg-gradient-to-r from-[#ffc456] to-[#36bed6] bg-clip-text text-2xl text-transparent text-center">Invitaciones y Asistencias</h1>
+            </div>
+            <p class=" text-slate-300 mt-5 text-center p-5">
+                MeetHub fomenta la interacción social al permitir a los usuarios crear eventos y enviar invitaciones a otros. Los participantes pueden confirmar su asistencia a eventos de su interés, brindando una experiencia colaborativa que va más allá de la simple organización, creando una comunidad dinámica y participativa en torno a diversas actividades.
+              </p>
+        </article>
+      </section>
+    </section>
+  </section>
+</section>
+
+
+
