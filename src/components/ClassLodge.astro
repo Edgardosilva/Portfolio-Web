@@ -1,0 +1,54 @@
+---
+import Slider from "./Slider";
+import Tags from "./Tags.astro";
+
+const { name, title } = Astro.props;
+---
+
+<section class={`relative bg-white bg-opacity-5 lg:h-[370px] lg:mt-0 lg:p-0 lg:overflow-hidden p-3 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.25)] flex flex-col justify-center w-full rounded-3xl mt-5`}>
+  <section class="p-5 lg:p-0">
+    <section class="flex flex-col items-center justify-center lg:flex-row">
+      <article>
+        <h1 class=" lg:hidden text-cyan-600 font-bold text-2xl mb-3">ClassLodge</h1>
+      </article>
+      <section class="lg:m-5 xl:m-8">
+        <article class="lg:w-[280px] xl:w-[300px] xl:h-[300px] rounded-xl ml-2">
+          <Slider img1={'ClassLodgeMain3.jpg'}/>
+        </article>
+        <article class="flex flex-wrap justify-evenly lg:hidden">
+          <Tags name = 'HTML' logo = 'htmlLogo.png'/>
+          <Tags name = 'CSS' logo = 'cssLogo.png'/>
+          <Tags name = 'JavaScript' logo = 'jsLogo.png'/>
+          <Tags name = 'ReactJS' logo = 'reactLogo.png'/>
+          <Tags name = 'Tailwind' logo = 'tailwindLogo.jpg'/>
+        </article>
+      </section>
+      <section>
+        <article class="lg:scale-95 lg:mt-0 lg:flex lg:flex-col lg:justify-center">
+          <h1 class=" hidden lg:block bg-gradient-to-r from-[#ffc456] to-[#36bed6] bg-clip-text tracking-tight text-transparent lg:font-bold lg:text-2xl lg:text-left">Colaborativo: ClassLodge</h1>
+          <p class=" text-slate-300 mt-5 mr-5">
+            Una plataforma de cursos pregrabados online de diferentes categorias para 
+            todo tipo de publico. Podes inscribirte tanto como alumno como para docente, 
+            no dudes en inscribirte en nuestra plataforma y estar al tanto de los conocimientos
+            mas actualizado en distintas areas.
+          </p>
+          <p class=" text-slate-300 mt-5 mr-5">
+            <strong class="text-orange-300">Trabajando en un equipo multidiciplinario :</strong> 
+            Trabajar en este proyecto junto a un equipo de desarrolladores frontend, backend y QA,
+            me permitió pulir mis habilidades de trabajo en equipo, comunicación y organización, además de 
+            mejorar mis habilidades técnicas en React, TailwindCSS y Next JS.
+          </p>
+        </article>
+        <article class=" lg:bg-white lg:bg-opacity-5 lg:backdrop-blur-2xl lg:w-full lg:h-full justify-evenly flex mt-4 lg:absolute bottom-0 right-0 lg:opacity-0 hover:opacity-100 transition-opacity duration-200">
+          <button>
+            <a href="https://github.com/No-Country/s14-15-n-java" target="_blank" rel="noopener noreferrer" class=" mt-5">
+              <img src="githubSvg.svg" alt="earthLogo" class="w-10 lg:w-14 hover:scale-150 transition-transform">
+            </a>
+          </button>
+        </article>
+      </section>
+    </section>
+  </section>
+</section>
+
+

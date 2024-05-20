@@ -8,6 +8,7 @@ import SobreMi from '../components/SobreMi.astro';
 import ImgSobreMi from '../components/ImgSobreMi.astro';
 import Meethub from '../components/Meethub.astro';
 import MeetHubDescription from '../components/MeetHubDescription.astro';
+import ClassLodge from '../components/ClassLodge.astro';
 ---
 
 <Layout title="Edgardo Silva Web">
@@ -39,6 +40,20 @@ import MeetHubDescription from '../components/MeetHubDescription.astro';
         <article>
           <h1 class="text-[#ffc456] lg:font-bold text-4xl font-bold mb-10 m-3">Proyectos</h1>
         </article>
+        <article class="lg:flex lg:items-center">
+          <article class="lg:w-2/3 lg:h-[370px] lg:m-3">
+            <ClassLodge />
+          </article>
+          <article class="lg:w-1/3 lg:m-3 hidden lg:block">
+            <Skills 
+              t1 = 'nextLogo.jpg'
+              t2 = 'jsLogo.png'
+              t3 = 'tailwindLogo.jpg'
+              t4 = 'reactLogo.png'
+            />
+          </article>
+        </article>
+
         <article class="lg:flex lg:items-center">
           <article class="lg:w-1/3 lg:m-3 hidden lg:block">
             <Skills 
