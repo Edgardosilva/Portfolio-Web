@@ -10,7 +10,7 @@ const Navbar = () => {
 	}
 
 	return (
-		<nav className="p-4 flex flex-col fixed z-50 w-full  backdrop-blur-lg sm:h-18 sm:pt-7">
+		<nav className="p-4 flex flex-col fixed z-50 w-full backdrop-blur-lg sm:h-18 sm:pt-7">
       <img src="logo.svg" className="w-[40px] md:hidden hover:cursor-pointer" onClick={handleClick} />
       <ul className={`bg-black bg-opacity-80 bg-blur-lg animate-fade-right animate-duration-[300ms] w-full h-10 hidden md:flex sm:justify-center md:items-center md:justify-center md:bg-transparent`}>
         <li><CategoryNav text = 'Inicio' route='#inicio'/></li>
